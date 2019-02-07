@@ -21,10 +21,12 @@
 }
 
 -(void)displayVideoWithURLString:(NSString *)urlString {
+    NSLog(@"urlString: %@", urlString);
     NSURL *channelURL = [NSURL fileURLWithPath:urlString];
     AVPlayer *player = [AVPlayer playerWithURL:channelURL];
     LandscapePlayerViewController *playerVC = [LandscapePlayerViewController new];
     playerVC.player = player;
+    [player play];
     [UIApplication.sharedApplication.keyWindow.rootViewController presentViewController:playerVC
                                                                                animated:YES
                                                                              completion:nil];
