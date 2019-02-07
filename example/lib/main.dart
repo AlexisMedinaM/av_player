@@ -23,7 +23,7 @@ class _MyAppState extends State<MyApp> {
   Future<void> initPlatformState() async {
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      await AvPlayer.displayVideo('http://streamingcws20.com:1935/tv4/videotv4/playlist.m3u8');
+      await AvPlayer.displayVideo('videos/example.mp4');
     } on PlatformException {
     }
 

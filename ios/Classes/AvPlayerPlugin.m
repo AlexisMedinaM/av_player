@@ -21,7 +21,7 @@
 }
 
 -(void)displayVideoWithURLString:(NSString *)urlString {
-    NSURL *channelURL = [NSURL URLWithString:urlString];
+    NSURL *channelURL = [NSURL fileURLWithPath:urlString];
     AVPlayer *player = [AVPlayer playerWithURL:channelURL];
     LandscapePlayerViewController *playerVC = [LandscapePlayerViewController new];
     playerVC.player = player;
