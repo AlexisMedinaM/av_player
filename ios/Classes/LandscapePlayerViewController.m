@@ -9,12 +9,12 @@
 
 @implementation LandscapePlayerViewController
 
-- (UIInterfaceOrientationMask)supportedInterfaceOrientations{
-    return UIInterfaceOrientationMaskLandscape;
-}
-
-- (BOOL)shouldAutorotate{
-    return NO;
-}
+//- (UIInterfaceOrientationMask)supportedInterfaceOrientations{
+//    return UIInterfaceOrientationMaskLandscape;
+//}
+//
+//- (BOOL)shouldAutorotate{
+//    return NO;
+//}
 
 @end
